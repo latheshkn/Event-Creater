@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.fragments.UploadEventImageFragment"
+    android:background="@color/bg_color">
+
+   <ImageView
+       android:id="@+id/IvImage"
+       android:layout_width="@dimen/width200"
+       android:layout_height="@dimen/width200"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginTop="@dimen/margin20"
+       android:src="@drawable/user_picture"
+       />
+   <EditText
+       android:id="@+id/tvDescription"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/IvImage"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:maxLines="2"
+       android:hint="description"
+      android:textAlignment="center"
+       android:textColorHint="@color/textColor"
+       android:layout_marginTop="@dimen/margin20"
+       android:layout_marginStart="@dimen/margin30"
+       android:layout_marginEnd="@dimen/margin30"
+       android:textColor="@color/textColor"
+       />
+
+   <Button
+       android:id="@+id/bnPickImage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:backgroundTint="@color/btn_color"
+       android:text="upload image"
+       android:textAllCaps="false"
+       android:layout_marginTop="@dimen/margin20"
+       android:layout_marginStart="@dimen/margin30"
+       android:layout_marginEnd="@dimen/margin30"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

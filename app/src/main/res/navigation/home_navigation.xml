@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/dashBoardFragment2">
+
+    <fragment
+        android:id="@+id/dashBoardFragment2"
+        android:name="com.example.eventcreater.home.fragments.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment2_to_acceptInvitationFragment2"
+            app:destination="@id/acceptInvitationFragment2" />
+        <action
+            android:id="@+id/action_dashBoardFragment2_to_eventImageListFragment"
+            app:destination="@id/eventImageListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acceptInvitationFragment2"
+        android:name="com.example.eventcreater.home.fragments.AcceptInvitationFragment"
+        android:label="fragment_accept_invitation"
+        tools:layout="@layout/fragment_accept_invitation" />
+    <fragment
+        android:id="@+id/eventImageListFragment"
+        android:name="com.example.eventcreater.home.fragments.EventImageListFragment"
+        android:label="fragment_event_image_list"
+        tools:layout="@layout/fragment_event_image_list" >
+        <argument
+            android:name="event_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/createEventFragment"
+        android:name="com.example.eventcreater.home.fragments.CreateEventFragment"
+        android:label="fragment_create_event"
+        tools:layout="@layout/fragment_create_event" />
+    <fragment
+        android:id="@+id/pendingEventListFragment"
+        android:name="com.example.eventcreater.home.fragments.PendingEventListFragment"
+        android:label="fragment_pending_event_list"
+        tools:layout="@layout/fragment_pending_event_list" >
+        <action
+            android:id="@+id/action_pendingEventListFragment_to_uploadEventImageFragment"
+            app:destination="@id/uploadEventImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadEventImageFragment"
+        android:name="com.example.eventcreater.home.fragments.UploadEventImageFragment"
+        android:label="fragment_upload_event_image"
+        tools:layout="@layout/fragment_upload_event_image" >
+        <argument
+            android:name="event_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_uploadEventImageFragment_to_dashBoardFragment2"
+            app:destination="@id/dashBoardFragment2" />
+    </fragment>
+</navigation>

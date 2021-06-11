@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragments.AcceptInvitationFragment"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="marriage invitation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/textColor"
+        android:maxLines="1"
+        android:textSize="@dimen/txtsize20"
+        android:layout_marginTop="@dimen/margin60"
+        />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xyz has invited to attend marriage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/textColor"
+        android:maxLines="2"/>
+    <Button
+        android:id="@+id/btAcccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin60"
+        android:layout_marginEnd="@dimen/margin30"
+        android:text="@string/accept"
+        android:padding="@dimen/margin15"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/margin30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBody" />
+
+    <Button
+        android:id="@+id/btDecline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin60"
+        android:layout_marginEnd="@dimen/margin30"
+        android:text="@string/decline"
+        android:padding="@dimen/margin15"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAcccept" />
+</androidx.constraintlayout.widget.ConstraintLayout>

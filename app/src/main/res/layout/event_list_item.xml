@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color">
+
+    <TextView
+        android:id="@+id/categoryImg"
+        android:layout_width="@dimen/widthheigh50"
+        android:layout_height="@dimen/widthheigh50"
+        android:maxLength="1"
+        android:background="@drawable/circuler_backgourd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textsize16"
+        android:layout_marginStart="@dimen/margin10"
+        app:layout_constraintStart_toEndOf="@+id/categoryImg"
+        app:layout_constraintTop_toTopOf="@+id/categoryImg"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryImg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

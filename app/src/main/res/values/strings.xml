@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EventCreater</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_txt">Sign In</string>
+    <string name="login_wlcm_txt">Welcome Back, Please enter your credentials \n to login.</string>
+    <string name="email_txt">EMAIL</string>
+    <string name="enter_e_mail">Enter E-mail</string>
+    <string name="password_txt">PASSWORD</string>
+    <string name="enter_password">Enter password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="no_account_txt">Don\'t have account? <font color="#FFFFFF"> Create New</font></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="sign_wlcm_txt">Welcome to MPM, Please fill your credentials \n to signup.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="reenter_password">Reenter password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_account_txt">Already have account? <font color="#FFFFFF"> Login Here</font></string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+</resources>
